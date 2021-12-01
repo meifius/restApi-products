@@ -17,7 +17,7 @@ router.get( '/:id', ( req, res ) => {
   if( productFinded === undefined ){
     res.status( 200 ).json({ error: 'producto no encontrado'});
   }else{
-    res.status(200).json( productFinded );
+    res.status( 200 ).json( productFinded );
   }
 });
 
@@ -34,6 +34,7 @@ router.post( '/', ( req, res ) => {
     id: db.length,
   }
   db = [ ...db, newProductwithId ];
+  console.log( db );
   res.status( 201 ).json( newProductwithId );
 });
 

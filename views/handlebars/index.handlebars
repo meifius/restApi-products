@@ -1,0 +1,14 @@
+
+<h1>Lista de Productos</h1>
+
+    {{#each db}}
+    <article>
+      <li>Producto: {{ title }}</li>
+      <li>Precio: {{ price }}</li>
+      <li><img src={{ thumbnail }} alt={{ thumbnail }}></li>
+    </article>
+
+    <hr>
+    {{/each}}
+
+<a href="/products">Productos</a>

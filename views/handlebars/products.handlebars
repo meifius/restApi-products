@@ -1,0 +1,22 @@
+
+<h1>Agregar un nuevo Producto</h1>
+  <form action="api/products" method="POST">
+    <div>
+      <label for="title">Nombre del Producto</label>
+      <input name="title" type="text">
+    </div>
+
+    <div>
+      <label for="price">Precio del Producto</label>
+      <input name="price" type="number" step="0.01">
+    </div>
+
+    <div>
+      <label for="thumbnail">URL imagen</label>
+      <input name="thumbnail" type="text">
+    </div>
+
+    <button type="submit">Send Product</button>
+  </form>
+
+<a href="/">Principal</a>
